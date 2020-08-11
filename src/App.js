@@ -8,7 +8,9 @@ function App() {
 
     return (
         <Container>
-
+            {loading && <h1>Loading and that</h1>}
+            {error && <h1>Error and that</h1>}
+            <h1>{jobs.length}</h1>
         </Container>
     );
 }
